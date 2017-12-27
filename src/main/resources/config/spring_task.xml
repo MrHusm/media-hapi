@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:task="http://www.springframework.org/schema/task"
+
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+	<task:annotation-driven/>
+	<!-- 异步线程池 -->
+	<bean id="taskExecutor"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<!-- 核心线程数 -->
+		<property name="corePoolSize" value="12" />
+		<!-- 最大线程数 -->
+		<property name="maxPoolSize" value="24" />
+		<!-- 队列最大长度 -->
+		<property name="queueCapacity" value="10000" />
+		<!-- 线程池维护线程所允许的空闲时间 -->
+		<property name="keepAliveSeconds" value="60" />
+		<!-- 线程池对拒绝任务(无线程可用)的处理策略 -->
+		<property name="rejectedExecutionHandler">
+			<bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+		</property>
+	</bean>
+	
+	<!-- 异步线程池 (复合接口)-->
+	<bean id="taskExecutorForMultiAction"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<!-- 核心线程数 -->
+		<property name="corePoolSize" value="32" />
+		<!-- 最大线程数 -->
+		<property name="maxPoolSize" value="64" />
+		<!-- 队列最大长度 -->
+		<property name="queueCapacity" value="10000" />
+		<!-- 线程池维护线程所允许的空闲时间 -->
+		<property name="keepAliveSeconds" value="60" />
+		<!-- 线程池对拒绝任务(无线程可用)的处理策略 -->
+		<property name="rejectedExecutionHandler">
+			<bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+		</property>
+	</bean>
+	
+	<!-- 异步线程池 (保存搜索联想词)-->
+	<bean id="taskExecutorForSearch"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<!-- 核心线程数 -->
+		<property name="corePoolSize" value="4" />
+		<!-- 最大线程数 -->
+		<property name="maxPoolSize" value="8" />
+		<!-- 队列最大长度 -->
+		<property name="queueCapacity" value="10000" />
+		<!-- 线程池维护线程所允许的空闲时间 -->
+		<property name="keepAliveSeconds" value="60" />
+		<!-- 线程池对拒绝任务(无线程可用)的处理策略 -->
+		<property name="rejectedExecutionHandler">
+			<bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+		</property>
+	</bean>
+	
+	<!-- 异步线程池 (上传图片)-->
+	<bean id="taskExecutorForUploadPic"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<!-- 核心线程数 -->
+		<property name="corePoolSize" value="256" />
+		<!-- 最大线程数 -->
+		<property name="maxPoolSize" value="1024" />
+		<!-- 队列最大长度 -->
+		<property name="queueCapacity" value="10000" />
+		<!-- 线程池维护线程所允许的空闲时间 -->
+		<property name="keepAliveSeconds" value="60" />
+		<!-- 线程池对拒绝任务(无线程可用)的处理策略 -->
+		<property name="rejectedExecutionHandler">
+			<bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+		</property>
+	</bean>
+	<!-- 异步线程池 (消息)-->
+	<bean id="taskExecutorForMessaging"
+		class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<!-- 核心线程数 -->
+		<property name="corePoolSize" value="5" />
+		<!-- 最大线程数 -->
+		<property name="maxPoolSize" value="20" />
+		<!-- 队列最大长度 -->
+		<property name="queueCapacity" value="100000" />
+		<!-- 线程池维护线程所允许的空闲时间 -->
+		<property name="keepAliveSeconds" value="60" />
+		<!-- 线程池对拒绝任务(无线程可用)的处理策略 -->
+		<property name="rejectedExecutionHandler">
+			<bean class="java.util.concurrent.ThreadPoolExecutor$DiscardPolicy" />
+		</property>
+	</bean>
+</beans>
