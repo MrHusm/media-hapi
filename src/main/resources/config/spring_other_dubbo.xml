@@ -14,6 +14,9 @@
 	<dubbo:provider timeout="10000" />
 	<!-- 电子书接口 -->
 	<dubbo:reference id="bookApi" interface="com.yxsd.kanshu.api.IBookApi" protocol="dubbo" version="1.0"  retries="0"/>
+
+	<!-- 章节接口 -->
+	<dubbo:reference id="chapterApi" interface="com.yxsd.kanshu.api.IChapterApi" protocol="dubbo" version="1.0"  retries="0"/>
 	
 
 </beans>

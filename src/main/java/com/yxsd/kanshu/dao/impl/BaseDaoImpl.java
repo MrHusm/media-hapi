@@ -29,14 +29,8 @@ public abstract class BaseDaoImpl<T> implements IBaseDao<T>{
 	@Resource(name = "master_sqlSession")
 	private SqlSessionTemplate sqlSession;
 
-	@Resource(name = "slave_sqlSession")
+	@Resource(name = "master_sqlSession")
 	private SqlSessionTemplate sqlSessionQurey;
-
-	@Resource(name = "comment_master_sqlSession")
-	private SqlSessionTemplate sqlCommSession;
-
-	@Resource(name = "comment_slave_sqlSession")
-	private SqlSessionTemplate sqlCommSessionQurey;
 
 	public SqlSessionTemplate getSqlSessionQueryTemplate(){
 		return this.sqlSessionQurey;
@@ -46,14 +40,6 @@ public abstract class BaseDaoImpl<T> implements IBaseDao<T>{
 		return this.sqlSession;
 	}
 
-	public SqlSessionTemplate getSqlCommSessionQueryTemplate(){
-		return this.sqlCommSessionQurey;
-	}
-
-	public SqlSessionTemplate getSqlCommSessionTemplate(){
-		return this.sqlCommSession;
-	}
-	
 	/**
 	 * 从库查询
 	 */
