@@ -43,8 +43,8 @@ public abstract class BaseServiceImpl<T, PK extends Serializable> implements IBa
         Type[] params = ((ParameterizedType) genType).getActualTypeArguments();  
         entityClass = (Class) params[0];  
 	}
-	
-	private String getPrefix(){
+
+	public String getPrefix(){
 		return entityClass.getSimpleName()+"Mapper.";
 	}
 	

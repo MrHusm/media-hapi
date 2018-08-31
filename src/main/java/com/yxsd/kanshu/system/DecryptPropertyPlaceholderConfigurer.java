@@ -1,23 +1,18 @@
 package com.yxsd.kanshu.system;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Properties;
-
+import com.yxsd.kanshu.utils.ConfigPropertieUtils;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.core.io.Resource;
 import org.springframework.util.DefaultPropertiesPersister;
 import org.springframework.util.PropertiesPersister;
 
-import com.yxsd.kanshu.utils.ConfigPropertieUtils;
+import java.io.*;
+import java.util.Properties;
 
 /**
  * 加载资源文件
- * @Author：wangzhiwei       
- * @Create Date：2014-11-04
+ * @Author：hushengmeng
+ * @Create Date：2018-01-16
  * @Modified By： 
  * @Modified Date:
  */
@@ -33,7 +28,7 @@ public class DecryptPropertyPlaceholderConfigurer extends PropertyPlaceholderCon
         this.locations = locations;
     }
     public void loadProperties(Properties props) throws IOException {
-    	String systemBasePath = "/etc/dangdangconf/kanshu";
+    	String systemBasePath = "/etc/yxsd/hapi";
         if (this.locations != null) {
             PropertiesPersister propertiesPersister = new DefaultPropertiesPersister();
             for (int i = 0; i < this.locations.length; i++) {
