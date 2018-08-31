@@ -41,13 +41,72 @@ public class UserUtils {
         DES des = new DES(Constants.DES_KEY);
         return des.decrypt(token);
     }
+    /**
+     * 发短信
+     * @param mobile
+     * @return
+     */
+    public static Map<String,String> sendMessage(String mobile){
+        Map<String,String> message = new HashMap<String,String>();
+        try {
+            String url = ConfigPropertieUtils.getString("tel_url");
+            DefaultHttpClient httpClient = new DefaultHttpClient();
+            HttpPost httpPost = new HttpPost(url);
+
+            String appKey = ConfigPropertieUtils.getString("tel_appKey");
+            String appSecret = ConfigPropertieUtils.getString("tel_appSecret");
+            String nonce =  CommonUtil.createNoncestr();
+            String curTime = String.valueOf((new Date()).getTime() / 1000L);
+            String checkSum = CheckSumBuilder.getCheckSum(appSecret, nonce, curTime);//参考 计算CheckSum的java代码
+
+            // 设置请求的header
+            httpPost.addHeader("AppKey", appKey);
+            httpPost.addHeader("Nonce", nonce);
+            httpPost.addHeader("CurTime", curTime);
+            httpPost.addHeader("CheckSum", checkSum);
+            httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+
+            // 设置请求的参数
+            List<NameValuePair> nvps = new ArrayList<NameValuePair>();
+            nvps.add(new BasicNameValuePair("templateid", "3144195"));
+            nvps.add(new BasicNameValuePair("mobile", mobile));
+            httpPost.setEntity(new UrlEncodedFormEntity(nvps, "utf-8"));
+
+            // 执行请求
+            HttpResponse httpResponse = httpClient.execute(httpPost);
+
+            // 打印执行结果
+            String result = EntityUtils.toString(httpResponse.getEntity(), "utf-8");
+            logger.info("发送短信返回：" + result);
+            Integer code = JSON.parseObject(result).getInteger("code");
+            message.put("code",String.valueOf(code));
+            if(code == 200){
+                message.put("msg","发送成功");
+            }else if(code == 315){
+                message.put("msg","IP限制");
+            }else if(code == 403){
+                message.put("msg","非法操作或没有权限");
+            }else if(code == 414){
+                message.put("msg","参数错误");
+            }else if(code == 416){
+                message.put("msg","今日验证码获取已达上限，明日再试");
+            }else if(code == 500){
+                message.put("msg","服务器内部错误");
+            }else{
+                message.put("msg","其他错误");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return message;
+    }
 
     /**
      * 校验验证码
      * @param mobile
      * @return
      */
-    public static Map<String,String> verifyCode(String mobile, String verifyCode){
+    public static Map<String,String> verifyCode(String mobile,String verifyCode){
         Map<String,String> message = new HashMap<String,String>();
         try {
             String url = ConfigPropertieUtils.getString("tel_verify_code_url");
@@ -92,7 +151,7 @@ public class UserUtils {
             }else if(code == 404){
                 message.put("msg","对象不存在");
             }else if(code == 413){
-                message.put("msg","验证失败(短信服务)");
+                message.put("msg","验证码错误");
             }else if(code == 414){
                 message.put("msg","参数错误");
             }else if(code == 500){
@@ -111,13 +170,13 @@ public class UserUtils {
      * @param request
      * @return
      */
-//    public static String getAppUrl(HttpServletRequest request) {
-//        String appUrl="channel="+request.getParameter("channel")+"&version="+request.getParameter("version")+"&deviceType="+request.getParameter("deviceType")
-//                +"&deviceSerialNo="+request.getParameter("deviceSerialNo")+"&resolution="+request.getParameter("resolution")+"&clientOs="+request.getParameter("clientOs")
-//                +"&macAddr="+request.getParameter("macAddr")+"&packname="+request.getParameter("packname")+"&model="+request.getParameter("model")+"&modelNo="
-//                +request.getParameter("modelNo");
-//        return appUrl;
-//    }
+    public static String getAppUrl(HttpServletRequest request) {
+        String appUrl="channel="+request.getParameter("channel")+"&version="+request.getParameter("version")+"&deviceType="+request.getParameter("deviceType")
+                +"&deviceSerialNo="+request.getParameter("deviceSerialNo")+"&resolution="+request.getParameter("resolution")+"&clientOs="+request.getParameter("clientOs")
+                +"&macAddr="+request.getParameter("macAddr")+"&packname="+request.getParameter("packname")+"&model="+request.getParameter("model")+"&modelNo="
+                +request.getParameter("modelNo");
+        return appUrl;
+    }
 
     public static void main(String[] args) {
         String token = createToken("10");
