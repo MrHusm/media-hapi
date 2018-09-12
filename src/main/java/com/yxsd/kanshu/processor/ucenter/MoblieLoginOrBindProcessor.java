@@ -86,7 +86,7 @@ public class MoblieLoginOrBindProcessor extends BaseApiProcessor {
 					} else {
 						//该手机号没有绑定账号 无法登录
 						sender.put("status", -2);
-						sender.put("message", "账号不存在");
+						sender.put("message", "该账号不存在，请先绑定账号再进行切换");
 					}
 				} else if ("2".equals(type)) {
 					//绑定手机号

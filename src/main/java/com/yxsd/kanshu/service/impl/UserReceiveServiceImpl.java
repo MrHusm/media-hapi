@@ -36,6 +36,8 @@ public class UserReceiveServiceImpl extends BaseServiceImpl<UserReceive, Long> i
                 userReceive.setWeixinStatus(1);
             }else if(type == 4){
                 userReceive.setWeiboStatus(1);
+            }else if(type == 5){
+                userReceive.setHuaweiStatus(1);
             }
             userReceive.setUpdateDate(new Date());
             this.update(userReceive);
@@ -50,6 +52,8 @@ public class UserReceiveServiceImpl extends BaseServiceImpl<UserReceive, Long> i
                 userReceive.setWeixinStatus(1);
             }else if(type == 4){
                 userReceive.setWeiboStatus(1);
+            }else if(type == 5){
+                userReceive.setHuaweiStatus(1);
             }
             userReceive.setUpdateDate(new Date());
             userReceive.setCreateDate(new Date());

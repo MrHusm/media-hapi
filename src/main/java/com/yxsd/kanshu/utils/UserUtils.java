@@ -179,9 +179,9 @@ public class UserUtils {
     }
 
     public static void main(String[] args) {
-        String token = createToken("10");
+        String token = createToken("null");
         System.out.println(token);
-        System.out.println(getUserIdByToken("IQCFqchHf4YsfowPivHA1CGY55Le-Lcp"));
+        System.out.println(getUserIdByToken("IQCFqchHf4X27Fa3Ort9ZWxAQpCKtndc"));
 
 
     }
