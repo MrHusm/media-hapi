@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html style="font-size: 27px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>融360 - 提供贷款、信用卡及理财服务</title>
+	<meta name="keywords" content="贷款,信用卡,理财">
+	<meta name="description" content="融360是专注于金融领域的智能搜索平台，提供专业的贷款、信用卡及理财在线搜索和申请服务。">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="baidu-tc-cerfication" content="98dcb862c6c6e54c0b0142acecc1530c">
+         
+	<link rel="apple-touch-icon" href="https://www.rong360.com/static/mobile/img/rong360_icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://www.rong360.com/static/mobile/img/rong360_icon_72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://www.rong360.com/static/mobile/img/rong360_icon_114.png">
+	<link rel="apple-touch-icon-precomposed" href="https://www.rong360.com/static/mobile/img/rong360_icon_114.png">
+	<link rel="apple-touch-startup-image" href="https://www.rong360.com/static/mobile/img/startup.png">
+	<link rel="shortcut icon" href="https://www.rong360.com/favicon.ico">		
+	
+	<script type="text/javascript">
+		var  shieldLicai="1";
+		var RONGID = "3fc57a099b57e2b563f81642f4e623ff";
+		var LINK_PROTOCOL = "https://";
+		var user_select_city = 0;
+		if(user_select_city == 1){
+				window.location.href = LINK_PROTOCOL + "m.rong360.com/city?src=/"
+		}
+	</script>
+
+	<link rel="canonical" href="https://www.rong360.com/">
+	<meta name="applicable-device" content="mobile">
+
+    <script type="text/javascript" src="js/zepto.js"></script>
+
+	<script type="text/javascript">
+    (function() {
+        var rem, dpr, time, doc = window.document,
+        docEl = doc.documentElement,
+        viewport = doc.querySelector('meta[name="viewport"]'),
+        zoomScale,
+        zoomScaleNum;
+        if (viewport) {            
+            zoomScale = viewport.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+            if(zoomScale){
+            	zoomScaleNum = parseFloat(zoomScale[2]);
+            	dpr = parseInt(1 / zoomScaleNum);
+            }
+        }
+        if (!dpr && !zoomScaleNum) {
+            var os = (window.navigator.appVersion.match(/android/gi), window.navigator.appVersion.match(/iphone/gi)),
+            dpr = window.devicePixelRatio;
+            dpr = os ? dpr >= 3 ? 3 : dpr >= 2 ? 2 : 1 : 1;
+            zoomScaleNum = 1 / dpr;
+        }
+        window.addEventListener("resize",
+            function() {
+                clearTimeout(time);
+                time = setTimeout(changeRem, 300);
+            },false);
+    	//改变基准rem
+        function changeRem(){
+            var docWidth = docEl.getBoundingClientRect().width;
+            if(docWidth / dpr > 540){
+            	docWidth = 540 * dpr;
+            }
+            //rem字号以320下的16px为基线进行等比缩放
+            rem = docWidth/320 * 16;
+            docEl.style.fontSize = rem + "px";
+        }
+        changeRem();
+    })();
+</script>
+	<link rel="stylesheet" type="text/css" href="css/module.css">
+	<link rel="stylesheet" type="text/css" href="css/m_rongui.css">
+	<link rel="stylesheet" type="text/css" href="css/m_home.css">
+</head>
+<body>
+	<div class="MiniWrap">
+	<div view="home">
+		<div class="ui-widget-header ui-header-theme-home">
+	        <div class="uwh-bar">
+	        	<div class="uwh-logo"><a class="newlogo"></a></div>
+	        	<div></div>
+				<div class="uwh-login"><a class="two-words" data-title="登录" id="loginBtn">登录</a></div>
+	            <div class="uwh-location">
+	                <a class="alinkproxy" href="https://m.rong360.com/city" data-href="/city?src=/">
+	                    <i class="header-fonts icon-place"></i>
+	                    <span id="MyCity">北京</span>
+	                </a>
+	            </div>
+	        </div>
+        </div>
+        <div class="notice-wrap">
+    <div class="icon"></div>
+    <div class="desc">近期诈骗案件高发，请注意隐私与资金安全</div>
+    <a class="next" href="https://m.rong360.com/static/main/antiFraud_notice/notice.html">了解详情</a>
+</div>
+
+<script type="text/javascript">
+$(".notice-wrap").on("click", function() {
+    window.location.href = "https://m.rong360.com/static/main/antiFraud_notice/notice.html";
+});
+</script>
+		<div id="home-slider" class="slider" style="visibility: visible;">
+	<div class="inner" style="width: 4047px;">
+		<div class="item" data-index="0" style="width: 1349px; left: 0px; transition-duration: 0ms; transform: translate(1349px, 0px) translateZ(0px);">
+			<a href="https://m.rong360.com/static/main/antiFraud_notice/notice.html"><img width="100%" src="img/m_1.jpg"></a>
+		</div>
+		<div class="item" data-index="1" style="width: 1349px; left: -1349px; transition-duration: 300ms; transform: translate(-1349px, 0px) translateZ(0px);">
+			<a href="https://m.rong360.com/express/?from=m_home"><img width="100%" src="img/m_2.jpg"></a>
+		</div>
+		<div class="item" data-index="2" style="width: 1349px; left: -2698px; transition-duration: 300ms; transform: translate(0px, 0px) translateZ(0px);">
+			<a><img width="100%" src="img/m_3.png"></a>
+		</div>		
+	</div>
+<div class="nav"><span class="item"></span><span class="item"></span><span class="item active"></span></div></div>		<br>
+		
+<div class="nav-block">
+	<div class="grid-2 br">
+		<a class="grid-item item1 hover-zoom" href="https://m.rong360.com/beijing">
+			<div class="inner">
+				<i class="find-loan"></i>
+				<div class="text">
+					<div class="tit"><strong>找贷款</strong></div>
+					<div class="desc">热门贷款一网打尽</div>
+				</div>
+			</div>
+		</a>
+		<div class="grid-item">
+			<a class="grid-item item2 credit hover-zoom" href="https://m.rong360.com/credit/">
+				<div class="inner">
+					<i class="credit"></i>
+					<div class="text">
+						<div class="tit"><strong>信用卡</strong></div>
+						<div class="desc">足不出户快捷办卡</div>
+					</div>
+				</div>
+			</a>
+			<a id="fangdaiUrl" class="grid-item item2 fangdai hover-zoom" href="https://m.rong360.com/fangdai/">
+				<div class="inner">
+					<i class="fang"></i>
+					<div class="text">
+						<div class="tit"><strong>房贷</strong></div>
+						<div class="desc">精选房贷祝您早安家</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="grid-2">
+		<a class="grid-item item2 daikuan hover-zoom back" href="https://m.rong360.com/express">
+			<div class="inner">
+				<i class="good"></i>
+				<div class="text">
+					<div class="tit">帮我</div>
+					<div class="desc"><strong>推荐贷款</strong></div>
+				</div>
+			</div>
+		</a>
+				<div class="grid-item">
+			<a class="grid-item item2 chedai hover-zoom" href="">
+				<div class="inner">
+					<i class="car"></i>
+					<div class="text">
+						<div class="tit"><strong>平板贷</strong></div>
+						<div class="desc">平板贷款等你选择</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+<br>
+<div wrap="h8 b12">
+	<div class="home-panel daikuan back">
+		<div class="title">贷款</div>
+		<div class="content">
+			<div class="grid-2">
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/beijing">
+					<div class="inner">
+						<div class="tit"><i class="hot-loan"></i>热门贷款</div>
+						<div class="desc">万家贷款等你选择</div>
+					</div>
+				</a>
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/express/">
+					<div class="inner">
+						<div class="tit"><i class="good-loan"></i>帮我推荐</div>
+						<div class="desc">1分钟找到合适贷款</div>
+					</div>
+				</a>
+			</div>
+			<div class="grid-4">
+				<a class="grid-item item2 hover-shadow" >
+					<div class="inner">
+						<i class="work"></i>
+						<div class="tit">工薪贷</div>
+					</div>
+				</a>				
+				<a class="grid-item item2 hover-shadow">
+					<div class="inner">
+						<i class="person"></i>
+						<div class="tit">经营贷</div>
+					</div>
+				</a>				
+				<a class="grid-item item2 hover-shadow" href="https://m.rong360.com/ask/">
+					<div class="inner">
+						<i class="faq"></i>
+						<div class="tit">问答</div>
+					</div>
+				</a>				
+				<a class="grid-item item2 hover-shadow" href="https://m.rong360.com/news/0">
+					<div class="inner">
+						<i class="book"></i>
+						<div class="tit">攻略</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div wrap="h8 b12">
+	<div class="home-panel credit back">
+		<div class="title">信用卡</div>
+		<div class="content">
+			<div class="grid-2">
+				<a class="grid-item item-big item3 hover-shadow" href="https://m.rong360.com/credit/">
+					<div class="inner">
+						<i class="credit-submit"></i>
+						<div class="tit">办信用卡</div>
+						<div class="desc">帮您推荐信用卡</div>
+					</div>
+				</a>
+				<div class="grid-item">
+					<div class="grid-2">				
+						<a class="grid-item item2 hover-shadow" href="https://m.rong360.com/credit/card/landing/2">
+							<div class="inner">
+								<i class="credit-ranking"></i>
+								<div class="tit">排行榜</div>
+							</div>
+						</a>
+						<a class="grid-item item2 hover-shadow" href="https://m.rong360.com/news/0">
+							<div class="inner">
+								<i class="finance-forum"></i>
+								<div class="tit">热点</div>
+							</div>
+						</a>
+					</div>
+					<div class="grid-2 bt-none">
+						<a class="grid-item item2 hover-shadow" href="https://m.rong360.com/credit/f-youhui">
+							<div class="inner">
+								<i class="sale"></i>
+								<div class="tit">卡优惠</div>
+							</div>
+						</a>				
+						<a class="grid-item item2 hover-shadow" href="https://m.rong360.com/news/35">
+							<div class="inner">
+								<i class="credit-book"></i>
+								<div class="tit">卡攻略</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		<div wrap="h8 b12">
+	<div class="home-panel fangdai back">
+		<div class="title">房贷</div>
+		<div class="content">
+			<div class="grid-2">
+				<a class="grid-item item1 hover-shadow">
+					<div class="inner">
+						<div class="tit"><i class="hot-fang"></i>热门房贷</div>
+						<div class="desc">万家房贷等你选择</div>
+					</div>
+				</a>
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/calculator/fangdai.html">
+					<div class="inner">
+						<div class="tit"><i class="cal-fang"></i>房贷计算</div>
+						<div class="desc">计算月供明白还款</div>
+					</div>
+				</a>
+			</div>
+			<div class="grid-2">
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/calculator/ershoufangjiaoyishui.html">
+					<div class="inner">
+						<div class="tit"><i class="cal-number"></i>税费计算</div>
+						<div class="desc">买房税费一目了然</div>
+					</div>
+				</a>
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/ask/?tag=1">
+					<div class="inner">
+						<div class="tit"><i class="fang-book"></i>买房知识</div>
+						<div class="desc">为您解答房贷疑难</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>				<div wrap="h8 b12">
+	<div class="home-panel askgl back">
+		<div class="title">问答攻略</div>
+		<div class="content">
+			<div class="grid-2">
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/ask/">
+					<div class="inner">
+						<div class="tit"><i class="faq-loan"></i>贷款知识</div>
+						<div class="desc">为您贷款答疑解惑</div>
+					</div>
+				</a>
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/credit/f-gonglue">
+					<div class="inner">
+						<div class="tit"><i class="sale"></i>用卡攻略</div>
+						<div class="desc">精选信用卡优惠</div>
+					</div>
+				</a>
+			</div>
+			<div class="grid-2">
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/bbs/forum.php?mod=forumdisplay&amp;fid=52&amp;mobile=2">
+					<div class="inner">
+												<div class="tit"><i class="faq-finance"></i>贷款问答</div> 
+												<div class="desc">网友答疑解惑</div>
+					</div>
+				</a>
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/article?type=19">
+					<div class="inner">
+						<div class="tit"><i class="fang-book"></i>房贷攻略</div>
+						<div class="desc">买房知识一网打尽</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>		<div wrap="h8 b12">
+	<div class="home-panel tools back">
+		<div class="title">常用工具</div>
+		<div class="content">
+			<div class="grid-2">
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/calculator/fangdai.html">
+					<div class="inner">
+						<div class="tit"><i class="cal-fang"></i>房贷<br>计算器</div>
+					</div>
+				</a>
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/calculator/quankuanmaiche.html">
+					<div class="inner">
+						<div class="tit"><i class="cal-car"></i>购车<br>计算器</div>
+					</div>
+				</a>
+			</div>
+			<div class="grid-2">
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/calculator/nianzhongjiang.html">
+					<div class="inner">
+						<div class="tit"><i class="cal-money"></i>年终奖<br>计算器</div>
+					</div>
+				</a>
+				<a class="grid-item item1 hover-shadow" href="https://m.rong360.com/daikuanlilv/">
+					<div class="inner">
+						<div class="tit"><i class="cal-number"></i>贷款<br>利率</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>		<div class="footer">
+	<div class="links">
+		<a href="https://m.rong360.com/daikuan/">找贷款</a>
+		<a href="https://m.rong360.com/credit/">办信用卡</a>
+		<a href="https://m.rong360.com/calculator/">工具大全</a>
+		<br>
+		<br>
+		<a href="https://m.rong360.com/baike/">金融百科</a>
+		<a href="https://m.rong360.com/about/">关于我们</a>
+		<a href="https://m.rong360.com/map/">网站地图</a>
+	</div>
+	<div class="copyright">©2019 Rong360.com Inc.All Rights Reserved.</div>
+	<div doc="tail" wrap="t8 b12" style="display: none;">北京融七牛信息技术有限公司  1010-0360</div>
+	<div class="links">
+		<a href="https://www.rong360.com/?from=mobile">电脑版</a>
+		<a href="https://m.rong360.com/">手机版</a>
+		<a href="https://campaign.rong360.com/applanding/daikuan/landing.html">客户端</a>
+	</div>
+	<br>
+	
+	<div class="logo">
+		<div class="newlogo"></div>
+	</div>
+</div>
+		<style type="text/css">
+	.flink{
+		overflow: hidden;
+		color: #bbb;
+		font-size: .75rem;
+		line-height: .875rem;
+		padding: 0 0.8rem;
+	}
+	.flink a{
+		width: 20%;
+		float: left;
+		margin-bottom: 5px;
+		color: #bbb;
+		text-decoration: none;
+	}
+	.flink .hide{
+		display: none;
+	}
+	.flink .show{
+		display: inline;
+	}
+    .sitnavbar{
+		padding: 5px 0.8rem;
+		font-size: .75rem;
+        color: #bbbbbb;        
+    }
+    .sitnavbar #orgname{
+        color: #bbbbbb;
+        display: inline;
+        font-weight: normal;            
+    }
+    .sitnavbar a,
+    .sitnavbar h1{
+        display: inline;
+        font-weight: normal;
+		font-size: .75rem;
+        color: #bbbbbb;
+    }
+</style>
+	</div>
+	<img id="Log" style="display:none;" src="https://m.rong360.com/">
+<img id="semLog" style="display:none;" src="https://m.rong360.com/">
+<script type="text/javascript">
+	//点击统计
+	$(document).delegate('[data-dpf-log]',"tap", function(){
+        var url = $(this).attr('href'),
+        	data = $(this).data("dpf-log");
+        $.log({
+        	page_name: data.page_name
+        });
+	});
+</script>
+</div>
+<script type="text/javascript" src="js/m_rongui.js"></script>
+<script type="text/javascript" src="js/m_home.js"></script>
+</body>
+</html>
