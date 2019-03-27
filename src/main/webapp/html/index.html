@@ -1,285 +1,295 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <title>首页</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-siteapp"/>
-  
-  <link rel="alternate icon" type="img/hengwang-1.png" href="img/hengwang-1.png">
-  <link rel="stylesheet" href="css/amazeui.css"/>
-  <link rel="stylesheet" href="css/style.css?a=1"/>
-</head>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-<body>
-<header class="am-topbar header">
-	<div class="am-container-1">
-		<div class="left hw-logo">
-		  <img class=" logo" src="img/HENGWANG.png"></img>
-		  <img class="word" src="img/hw-word.png"></img>
-        </div>
-        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
-              data-am-collapse="{target: '#doc-topbar-collapse'}">
-          <span class="am-sr-only">导航切换</span>
-          <span class="am-icon-bars"></span>
-        </button>
+		<link rel="alternate icon" type="img/hengwang-1.png" href="img/hengwang-1.png">
+		<link rel="stylesheet" href="css/amazeui.css" />
+		<link rel="stylesheet" href="css/style.css?a=1" />
+	</head>
 
-        <div class="am-collapse am-topbar-collapse right" id="doc-topbar-collapse">
-            <div class=" am-topbar-left am-form-inline am-topbar-right" role="search">
-                <ul class="am-nav am-nav-pills am-topbar-nav hw-menu">
-                    <li class="hw-menu-active"><a href="index.html">首页</a></li>
-                    <li><a href="product-show.html">产品展示 </a></li>
-                    <li><a href="customer-case.html">客户案例</a></li>
-                </ul>
-            </div>
-        </div>
-  </div>
-</header>
-<div class="rollpic">
-	 <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}' >
-	  <ul class="am-slides" >
-	      <li style="height:400px;"><img src="img/hw_bg1.png" style=" width: 100%;height: 100%;"/></li>
-	      <li style="height:400px;"><img src="img/hw_bg.png" style=" width: 100%;height: 100%;"/></li>  	
-	      <li style="height:400px;"><img src="img/hw_bg3.png" style=" width: 100%;height: 100%;"/></li>
-	      <li style="height:400px;"><img src="img/hw_bg4.png" style=" width: 100%;height: 100%;"/></li>
-	  </ul>
-    </div>
-</div>
-<div class="am-container-1">
-	<div class="solutions part-all">
-		<div class="part-title">
-			<i class="am-icon-lightbulb-o part-title-i"></i>
-			<span class="part-title-span">找贷款</span>
-			<p>热门贷款一网打尽</p>
-		</div>
-		<ul class="am-g part-content solutions-content">
-		  <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
-		  	<i class="am-icon-safari solution-circle"></i>
-		  	<span class="solutions-title">信用卡</span>
-		  	<p class="solutions-way">足不出户快捷办卡</p>
-		  </li>
-		  <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
-		  	<i class="am-icon-magic solution-circle"></i>
-		  	<span class="solutions-title">房贷</span>
-		  	<p class="solutions-way">精选房贷祝您早安家</p>
-		  </li>
-		  <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
-		  	<i class="am-icon-phone solution-circle"></i>
-		  	<span class="solutions-title">车贷</span>
-		  	<p class="solutions-way">海量好车认您选</p>
-		  </li>
-		  <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
-		  	<i class="am-icon-hacker-news solution-circle"></i>
-		  	<span class="solutions-title">平板贷</span>
-		  	<p class="solutions-way">平板贷款等你选择</p>
-		  </li>
-		</ul>
-	</div>
-</div>
+	<body>
+		<header class="am-topbar header">
+			<div class="am-container-1">
+				<div class="left hw-logo">
+					<img class=" logo" src="img/HENGWANG.png"></img>
+					<img class="word" src="img/hw-word.png"></img>
+				</div>
+				<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}">
+					<span class="am-sr-only">导航切换</span>
+					<span class="am-icon-bars"></span>
+				</button>
 
-<div class="imit-apply-box clearfix" id="floor2">
-    <div class="part-title" style="margin-bottom: 20px;">
-        <i class="am-icon-anchor part-title-i"></i>
-        <span class="part-title-span">算算我能借多少</span>
-        <p>先到先得</p>
-    </div>
-    <div class="imit-apply clearfix">
-        <div class="title"></div>
-        <div class="txt">填写以下信息，预估您的借款额度</div>
-        <div class="select-box-list clearfix">
-            <div class="select-box">
-                <div class="s-title">性别：</div>
-                <div class="radiobox clearfix">
-                    <input type="radio" id="girl" name="sex" value="sex1"> <label for="girl">女士</label>&emsp;
-                    <input type="radio" id="boy" name="sex" value="sex2"> <label for="boy">先生</label>
-                </div>
-            </div>
-            <div class="select-box">
-                <div class="s-title">年龄：</div>
-                <div class="radiobox clearfix">
-                    <input type="radio" id="age90" name="age" value="1"> <label for="age90">90后</label>&emsp;
-                    <input type="radio" id="age80" name="age" value="2"> <label for="age80">80后</label><br/>
-                    <input type="radio" id="age70" name="age" value="3"> <label for="age70">70后</label>&emsp;
-                    <input type="radio" id="ageNo" name="age" value="4"> <label for="ageNo">其它</label>
-                </div>
-            </div>
-            <div class="select-box">
-                <div class="s-title">信用卡额度：</div>
-                <div class="radiobox clearfix">
-                    <input type="radio" id="creditCard1" name="creditCard" value="0"> <label for="creditCard1">没有信用卡</label>&emsp;
-                    <input type="radio" id="creditCard2" name="creditCard" value="1"> <label for="creditCard2">不到3万</label><br/>
-                    <input type="radio" id="creditCard3" name="creditCard" value="2"> <label for="creditCard3">3万-5万</label>&emsp;&emsp;&nbsp;
-                    <input type="radio" id="creditCard4" name="creditCard" value="3"> <label for="creditCard4">超过5万</label>
-                </div>
-            </div>
-            <div class="tip-popup-box">
-                <div class="tip-popup"></div>
-            </div>
-        </div>
-        <div class="calculateBtn">计算额度</div>
-    </div>
-    <div class="borrow">
-        <div class="title-bg"></div>
-        <div class="title clearfix">
-            <span>已有超</span><em></em><span>位明智小伙伴借款成功</span>
-        </div>
-        <div class="scrollbox">
-            <div id="scrollDiv">
-                <div style="position: relative">
-                    <ul style="position: absolute; top:0"></ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="description2-box clearfix">
-    <!--    <div class="title"><img src="img/threego.png"></div>-->
-    <div class="part-title">
-        <i class="am-icon-css3 part-title-i"></i>
-        <span class="part-title-span">只需3步，快速拿钱</span>
-        <p>火爆抢购中，数量有限</p>
-    </div>
-    <div class="img">
-        <img src="img/description-box-tp.png">
-    </div>
-</div>
-
-
-<div class="news-all">
-	<div class="am-container-1">
-    <div class="news part-all">
-		<div class="part-title">
-			<i class="am-icon-newspaper-o part-title-i"></i>
-			<span class="part-title-span">新闻动态</span>
-			<p>Hengwang News</p>
-		</div>
-		<div>
-				<ul class="news-content-ul">
-					<li class="am-u-sm-12 am-u-md-6 am-u-lg-6">
-						    <div class=" am-u-sm-12 am-u-md-12 am-u-lg-5">
-						    	<div class="news-img">
-						    	<img src="img/news.png"></img>
-						    	</div>
-						    </div>
-						    <div  class=" am-u-sm-12 am-u-md-12 am-u-lg-7">
-										<span class="news-right-title">穷人怎么去银行申请贷款？</span>
-										
-										<p class="news-right-words">现在中国的平均收入水平已经非常高了，但是仍然有一部分穷人对于这些穷人来说，他们在申请贷款的时候，自身的资质是非常差的，所以很难申请到银行贷款，但是这并不意味着穷人没有办法申请银行贷款...</p>
-										<a><span class="see-more2">查看更多<i class="am-icon-angle-double-right"></i></span></a>
-								 </div>	
-						<div class="clear"></div>
-					</li>
-					<li class="am-u-sm-12 am-u-md-6 am-u-lg-6">
-						    <div class=" am-u-sm-12 am-u-md-12 am-u-lg-5">
-						    	<div class="news-img">
-						    	<img src="img/news1.png"></img>
-						    	</div>
-						    </div>
-						    <div  class=" am-u-sm-12 am-u-md-12 am-u-lg-7">
-										<span class="news-right-title">百强市占58%，未来是大房企天下！</span>
-										<p class="news-right-words">数据显示，截至2018年底，房地产百强企业销售总额、销售面积分别达87239.1亿元、66244.5万平方米，同比增长33.2%和32.0%；百强企业销售额市场份额快速上升至58.1%，较上年提高10.6个百分点，行业集中度加速提升。...</p>
-										<a><span class="see-more2">查看更多<i class="am-icon-angle-double-right"></i></span></a>
-								 </div>	
-						<div class="clear"></div>
-					</li>		
-					<div class="clear"></div>
+				<div class="am-collapse am-topbar-collapse right" id="doc-topbar-collapse">
+					<div class=" am-topbar-left am-form-inline am-topbar-right" role="search">
+						<ul class="am-nav am-nav-pills am-topbar-nav hw-menu">
+							<li class="hw-menu-active"><a href="index.html">首页</a></li>
+							<li><a href="product-show.html">产品展示 </a></li>
+							<li><a href="customer-case.html">客户案例</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- pc轮播图 -->
+		<div class="rollpic pcBanner">
+			<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
+				<ul class="am-slides">
+					<li><img src="img/hw_bg1.png" /></li>
+					<li><img src="img/hw_bg.png" /></li>
+					<li><img src="img/hw_bg3.png" /></li>
+					<li><img src="img/hw_bg4.png" /></li>
 				</ul>
-			<div class="clear"></div>
+			</div>
 		</div>
-	</div>
-</div>
-</div>
-
-<div class="part-all">
-<div class="customer  am-container-1">
-		<div class="part-title">
-			<i class="am-icon-users part-title-i"></i>
-			<span class="part-title-span">服务平台</span>
-			<p>Serve Customers</p>
+		<!-- h5轮播图 -->
+		<div class="rollpic h5Banner">
+			<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
+				<ul class="am-slides">
+					<li><img src="img/hw_bg1.png" /></li>
+					<li><img src="img/hw_bg.png" /></li>
+					<li><img src="img/hw_bg3.png" /></li>
+					<li><img src="img/hw_bg4.png" /></li>
+				</ul>
+			</div>
 		</div>
-		
-		<div class="am-slider am-slider-default am-slider-carousel part-all" data-am-flexslider="{itemWidth:150, itemMargin: 5, slideshow: false}" style="box-shadow:none;">
-  <ul class="am-slides">
-    <li><img src="img/ptn4.png"/></li>
-    <li><img src="img/ptn5.png"/></li>
-    <li><img src="img/ptn6.png"/></li>
-    <li><img src="img/ptn7.png"/></li>
-    <li><img src="img/ptn8.png"/></li>
-    <li><img src="img/ptn4.png"/></li>
-    <li><img src="img/ptn5.png"/></li>
-    <li><img src="img/ptn6.png"/></li>
-    <li><img src="img/ptn7.png"/></li>
-    <li><img src="img/ptn8.png"/></li>
-  </ul>
-</div>
-</div>
-</div>
+		<div class="am-container-1">
+			<div class="solutions part-all">
+				<div class="part-title">
+					<i class="am-icon-lightbulb-o part-title-i"></i>
+					<span class="part-title-span">找贷款</span>
+					<p>热门贷款一网打尽</p>
+				</div>
+				<ul class="am-g part-content solutions-content">
+					<li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+						<i class="am-icon-safari solution-circle"></i>
+						<span class="solutions-title">信用卡</span>
+						<p class="solutions-way">足不出户快捷办卡</p>
+					</li>
+					<li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+						<i class="am-icon-magic solution-circle"></i>
+						<span class="solutions-title">房贷</span>
+						<p class="solutions-way">精选房贷祝您早安家</p>
+					</li>
+					<li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+						<i class="am-icon-phone solution-circle"></i>
+						<span class="solutions-title">车贷</span>
+						<p class="solutions-way">海量好车认您选</p>
+					</li>
+					<li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+						<i class="am-icon-hacker-news solution-circle"></i>
+						<span class="solutions-title">平板贷</span>
+						<p class="solutions-way">平板贷款等你选择</p>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-<footer class="footer ">
-	
-<ul>
-    <li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
-        <div class="part-5-title">联系我们</div>
-        <div class="part-5-words2">
-            <span>地址:广州市天河区东站路1号鹏程国际B座2511</span>
-            <span>QQ:1317001713</span>
-            <span>传真:(123) 456-7890</span>
-            <span>邮箱:support@vectorlab.com</span>
-        </div>
-    </li>
-    <li class="am-u-lg-4 am-u-md-4 am-u-sm-12 ">
-        <div class="part-5-title">相关链接</div>
-        <div class="part-5-words2">
-            <ul class="part-5-words2-ul">
-                <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="solutions.html">解决方案</a></li>
-                <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="product-show.html">产品展示</a></li>
-                <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="customer-case.html">客户案例</a></li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-    </li>
-    <div class="clear"></div>
-</ul>
-   
-</footer>
+		<div class="imit-apply-box clearfix" id="floor2">
+			<div class="part-title" style="margin-bottom: 20px;">
+				<i class="am-icon-anchor part-title-i"></i>
+				<span class="part-title-span">算算我能借多少</span>
+				<p>先到先得</p>
+			</div>
+			<div class="imit-apply clearfix">
+				<div class="title"></div>
+				<div class="txt">填写以下信息，预估您的借款额度</div>
+				<div class="select-box-list clearfix">
+					<div class="select-box">
+						<div class="s-title">性别：</div>
+						<div class="radiobox clearfix">
+							<input type="radio" id="girl" name="sex" value="sex1"> <label for="girl">女士</label>&emsp;
+							<input type="radio" id="boy" name="sex" value="sex2"> <label for="boy">先生</label>
+						</div>
+					</div>
+					<div class="select-box">
+						<div class="s-title">年龄：</div>
+						<div class="radiobox clearfix">
+							<input type="radio" id="age90" name="age" value="1"> <label for="age90">90后</label>&emsp;
+							<input type="radio" id="age80" name="age" value="2"> <label for="age80">80后</label>
+							<input type="radio" id="creditCard1" name="creditCard" value="0"> <label for="creditCard1">没有信用卡</label>&emsp;
+							<input type="radio" id="creditCard2" name="creditCard" value="1"> <label for="creditCard2">不到3万</label><br />
+							<input type="radio" id="age70" name="age" value="3"> <label for="age70">70后</label>&emsp;
+							<input type="radio" id="ageNo" name="age" value="4"> <label for="ageNo">其它</label>
 
-</body>
+							<input type="radio" id="creditCard3" name="creditCard" value="2"> <label for="creditCard3">3万-5万</label>&emsp;&emsp;&nbsp;
+							<input type="radio" id="creditCard4" name="creditCard" value="3"> <label for="creditCard4">超过5万</label>
 
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="js/jquery.min.js"></script>
-<!--<![endif]-->
-<script src="js/amazeui.min.js"></script>
-<script src="js/scroll.js"></script>
-<script>
-        var first_request = true;
-    var interval;
-    var doScroll = function () {
-        $("#scrollDiv ul").css("top","-=1px");
-    };
-    var setUserList = function () {
-        var _html = "<li>20:03:49郑**借款36000元.</li><li>20:03:49董**借款27000元.</li><li>20:03:44张**借款16000元.</li><li>20:03:40朱**借款30000元.</li><li>20:03:39徐**借款27000元.</li><li>20:03:37陈**借款34000元.</li><li>20:03:35吴**借款29000元.</li><li>20:03:35周**借款35000元.</li><li>20:03:34马**借款18000元.</li><li>20:03:34郭**借款5000元.</li><li>20:03:32罗**借款26000元.</li><li>20:03:30马**借款30000元.</li><li>20:03:29梁**借款9000元.</li><li>20:03:29张**借款27000元.</li><li>20:03:24萧**借款10000元.</li><li>20:03:22罗**借款28000元.</li><li>20:03:21萧**借款22000元.</li><li>20:03:20周**借款24000元.</li><li>20:03:18黄**借款10000元.</li><li>20:03:17杨**借款35000元.</li><li>20:03:14胡**借款10000元.</li><li>20:03:13李**借款30000元.</li><li>20:03:13何**借款7000元.</li><li>20:03:13何**借款28000元.</li><li>20:03:11徐**借款21000元.</li><li>20:03:11杨**借款38000元.</li><li>20:03:10马**借款7000元.</li><li>20:03:09何**借款37000元.</li><li>20:03:09林**借款6000元.</li><li>20:03:07杨**借款33000元.</li><li>20:03:03朱**借款18000元.</li><li>20:03:03郭**借款37000元.</li><li>20:03:03萧**借款10000元.</li><li>20:03:01胡**借款18000元.</li><li>20:03:01萧**借款17000元.</li><li>20:04:49孙**借款23000元.</li><li>20:04:48黄**借款8000元.</li><li>20:04:44冯**借款17000元.</li><li>20:04:44萧**借款20000元.</li><li>20:04:41董**借款15000元.</li><li>20:04:38陈**借款35000元.</li><li>20:04:37胡**借款5000元.</li><li>20:04:33黄**借款24000元.</li>";
-        $("#scrollDiv ul").append(_html);
-        if(first_request) {
-            interval = setInterval(function () {
-                doScroll();
-            },80);
-            first_request = false;
-        }
-        setTimeout(function () {
-            setUserList();
-        },60000);
-    };
-    $("#scrollDiv ul").hover(function () {
-        clearInterval(interval);
-    },function () {
-        interval = setInterval(function () {
-            doScroll();
-        },80);
-    });
-    setUserList();
-</script>
+						</div>
+					</div>
+					<div class="tip-popup-box">
+						<div class="tip-popup"></div>
+					</div>
+				</div>
+				<div class="calculateBtn">计算额度</div>
+			</div>
+			<div class="borrow">
+				<div class="title-bg"></div>
+				<div class="title clearfix">
+					<span>已有超</span><em></em><span>位明智小伙伴借款成功</span>
+				</div>
+				<div class="scrollbox">
+					<div id="scrollDiv">
+						<div style="position: relative">
+							<ul style="position: absolute; top:0"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="description2-box clearfix">
+			<!--    <div class="title"><img src="img/threego.png"></div>-->
+			<div class="part-title">
+				<i class="am-icon-css3 part-title-i"></i>
+				<span class="part-title-span">只需3步，快速拿钱</span>
+				<p>火爆抢购中，数量有限</p>
+			</div>
+			<div class="img">
+				<img src="img/description-box-tp.png">
+			</div>
+		</div>
+
+
+		<div class="news-all">
+			<div class="am-container-1">
+				<div class="news part-all">
+					<div class="part-title">
+						<i class="am-icon-newspaper-o part-title-i"></i>
+						<span class="part-title-span">新闻动态</span>
+						<p>Hengwang News</p>
+					</div>
+					<div>
+						<ul class="news-content-ul">
+							<li class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+								<div class=" am-u-sm-12 am-u-md-12 am-u-lg-5">
+									<div class="news-img">
+										<img src="img/news.png"></img>
+									</div>
+								</div>
+								<div class=" am-u-sm-12 am-u-md-12 am-u-lg-7">
+									<span class="news-right-title">穷人怎么去银行申请贷款？</span>
+
+									<p class="news-right-words">现在中国的平均收入水平已经非常高了，但是仍然有一部分穷人对于这些穷人来说，他们在申请贷款的时候，自身的资质是非常差的，所以很难申请到银行贷款，但是这并不意味着穷人没有办法申请银行贷款...</p>
+<!--									<a><span class="see-more2">查看更多<i class="am-icon-angle-double-right"></i></span></a>-->
+								</div>
+								<div class="clear"></div>
+							</li>
+							<li class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+								<div class=" am-u-sm-12 am-u-md-12 am-u-lg-5">
+									<div class="news-img">
+										<img src="img/news1.png"></img>
+									</div>
+								</div>
+								<div class=" am-u-sm-12 am-u-md-12 am-u-lg-7">
+									<span class="news-right-title">百强市占58%，未来是大房企天下！</span>
+									<p class="news-right-words">数据显示，截至2018年底，房地产百强企业销售总额、销售面积分别达87239.1亿元、66244.5万平方米，同比增长33.2%和32.0%；百强企业销售额市场份额快速上升至58.1%，较上年提高10.6个百分点，行业集中度加速提升。...</p>
+<!--									<a><span class="see-more2">查看更多<i class="am-icon-angle-double-right"></i></span></a>-->
+								</div>
+								<div class="clear"></div>
+							</li>
+							<div class="clear"></div>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="part-all">
+			<div class="customer  am-container-1">
+				<div class="part-title">
+					<i class="am-icon-users part-title-i"></i>
+					<span class="part-title-span">服务平台</span>
+					<p>Serve Customers</p>
+				</div>
+
+				<div class="am-slider am-slider-default am-slider-carousel part-all" data-am-flexslider="{itemWidth:150, itemMargin: 5, slideshow: false}"
+				 style="box-shadow:none;">
+					<ul class="am-slides bottomSlide">
+						<li><img src="img/ptn4.png" /></li>
+						<li><img src="img/ptn5.png" /></li>
+						<li><img src="img/ptn6.png" /></li>
+						<li><img src="img/ptn7.png" /></li>
+						<li><img src="img/ptn8.png" /></li>
+						<li><img src="img/ptn4.png" /></li>
+						<li><img src="img/ptn5.png" /></li>
+						<li><img src="img/ptn6.png" /></li>
+						<li><img src="img/ptn7.png" /></li>
+						<li><img src="img/ptn8.png" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer ">
+
+			<ul>
+				<li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
+					<div class="part-5-title">联系我们</div>
+					<div class="part-5-words2">
+						<span>地址:广州市天河区东站路1号鹏程国际B座2511</span>
+						<span>QQ:1317001713</span>
+						<span>传真:(123) 456-7890</span>
+						<span>邮箱:support@vectorlab.com</span>
+					</div>
+				</li>
+				<li class="am-u-lg-4 am-u-md-4 am-u-sm-12 ">
+					<div class="part-5-title">相关链接</div>
+					<div class="part-5-words2">
+						<ul class="part-5-words2-ul">
+							<li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="solutions.html">解决方案</a></li>
+							<li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="product-show.html">产品展示</a></li>
+							<li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="customer-case.html">客户案例</a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</li>
+				<div class="clear"></div>
+			</ul>
+
+		</footer>
+
+	</body>
+
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<script src="js/jquery.min.js"></script>
+	<!--<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/scroll.js"></script>
+	<script>
+		var first_request = true;
+		var interval;
+		var doScroll = function() {
+			$("#scrollDiv ul").css("top", "-=1px");
+		};
+		var setUserList = function() {
+			var _html =
+				"<li>20:03:49郑**借款36000元.</li><li>20:03:49董**借款27000元.</li><li>20:03:44张**借款16000元.</li><li>20:03:40朱**借款30000元.</li><li>20:03:39徐**借款27000元.</li><li>20:03:37陈**借款34000元.</li><li>20:03:35吴**借款29000元.</li><li>20:03:35周**借款35000元.</li><li>20:03:34马**借款18000元.</li><li>20:03:34郭**借款5000元.</li><li>20:03:32罗**借款26000元.</li><li>20:03:30马**借款30000元.</li><li>20:03:29梁**借款9000元.</li><li>20:03:29张**借款27000元.</li><li>20:03:24萧**借款10000元.</li><li>20:03:22罗**借款28000元.</li><li>20:03:21萧**借款22000元.</li><li>20:03:20周**借款24000元.</li><li>20:03:18黄**借款10000元.</li><li>20:03:17杨**借款35000元.</li><li>20:03:14胡**借款10000元.</li><li>20:03:13李**借款30000元.</li><li>20:03:13何**借款7000元.</li><li>20:03:13何**借款28000元.</li><li>20:03:11徐**借款21000元.</li><li>20:03:11杨**借款38000元.</li><li>20:03:10马**借款7000元.</li><li>20:03:09何**借款37000元.</li><li>20:03:09林**借款6000元.</li><li>20:03:07杨**借款33000元.</li><li>20:03:03朱**借款18000元.</li><li>20:03:03郭**借款37000元.</li><li>20:03:03萧**借款10000元.</li><li>20:03:01胡**借款18000元.</li><li>20:03:01萧**借款17000元.</li><li>20:04:49孙**借款23000元.</li><li>20:04:48黄**借款8000元.</li><li>20:04:44冯**借款17000元.</li><li>20:04:44萧**借款20000元.</li><li>20:04:41董**借款15000元.</li><li>20:04:38陈**借款35000元.</li><li>20:04:37胡**借款5000元.</li><li>20:04:33黄**借款24000元.</li>";
+			$("#scrollDiv ul").append(_html);
+			if (first_request) {
+				interval = setInterval(function() {
+					doScroll();
+				}, 80);
+				first_request = false;
+			}
+			setTimeout(function() {
+				setUserList();
+			}, 60000);
+		};
+		$("#scrollDiv ul").hover(function() {
+			clearInterval(interval);
+		}, function() {
+			interval = setInterval(function() {
+				doScroll();
+			}, 80);
+		});
+		setUserList();
+	</script>
 </html>

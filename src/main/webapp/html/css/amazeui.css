@@ -8602,12 +8602,18 @@ ul.am-dropdown-content > .am-disabled > a:focus {
   display: none;
   -webkit-backface-visibility: hidden;
   position: relative;
+	height: 300px;
+	width: 100%;
+}
+.am-slider .bottomSlide li{
+	height: auto;
 }
 .no-js .am-slider .am-slides > li:first-child {
   display: block;
 }
 .am-slider .am-slides img {
   width: 100%;
+	height: 100%;
   display: block;
 }
 .am-pauseplay span {
