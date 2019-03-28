@@ -691,7 +691,7 @@ a {
 .imit-apply-box .imit-apply .calculateBtn{background:#fff;border: 1px solid #3f9fdb; box-shadow:1px 4px 8px 0 rgba(102,102,102,0.50);border-radius:40px;width:288px;height:38px;line-height: 38px;text-align: center; font-size:14px;color:#448CBB;letter-spacing:4px;display: block;margin:40px auto 40px;cursor: pointer;}
 .imit-apply-box .borrow{width: 390px;float: right;margin-right:50px;height: 366px;border: 1px solid #448CBB;background: #fff;}
 .imit-apply-box .borrow .title-bg{width: 390px;height: 32px;background: #3f9fdb;}
-.imit-apply-box .borrow .title{font-size:17px;color:#757575;letter-spacing:2px;text-align: center;padding-top: 34px; padding-bottom: 43px;width: 337px;margin: 0 auto;}
+.imit-apply-box .borrow .title{font-size:17px;color:#757575;letter-spacing:1px;text-align: center;padding-top: 34px; padding-bottom: 43px;width: 337px;margin: 0 auto;}
 .imit-apply-box .borrow .title span{float: left;display: block;}
 .imit-apply-box .borrow .title em{float: left; width: 90px; height: 19px;display: block;background: url(../img/wan_03.png) center no-repeat;margin-top: 2px;}
 
@@ -1638,7 +1638,7 @@ padding-bottom: 25px;}
 @media only screen and (max-width:1240px) {
 	.product-img {
 		width: 80%;
-		margin-top: 25px;
+		margin-top: 10px;
 	}
 }
 
@@ -1694,7 +1694,7 @@ padding-bottom: 25px;}
 	/* 产品展示*/
 	.product-img {
 		width: 90%;
-		margin-top: 25px;
+		margin-top: 10px;
 	}
 	.product-content {
 		margin: 0 10%;
@@ -1732,7 +1732,7 @@ padding-bottom: 25px;}
 	}
 	.product-img {
 		width: 100%;
-		margin-top: 25px;
+		margin-top: 10px;
 	}
 	.hw-menu li a {
 		line-height: 25px;
@@ -1753,7 +1753,7 @@ padding-bottom: 25px;}
 @media only screen and (max-width:768px) {
 	.product-img {
 		width: 100%;
-		margin-top: 25px;
+		margin-top: 10px;
 	}
 	.product-content {
 		margin: 0 5%;
@@ -1769,6 +1769,13 @@ padding-bottom: 25px;}
 
 @media only screen and (max-width:640px) {
 	/*首页*/
+	
+	.pcBanner{
+		display: none;
+	}
+	.h5Banner{
+		display: block;
+	}
 	.solution-circle {
 		font-size: 45px;
 		width: 110px;
@@ -1857,6 +1864,7 @@ padding-bottom: 25px;}
 	}
 	.news-content-ul li {
 		margin-top: 20px;
+		padding: 0 40px;
 	}
 	.customer-content li div img {
 		width: 80%;
@@ -2069,7 +2077,7 @@ i.am-icon-tasks{ display: none;}
 	.daiyu-title-ul {
 		margin-top: 20px !important;
 	}
-	.product-img{ margin-top: -20px;}
+	
 	/*服务中心*/
 	.service-img img {
 		width: 75%;
@@ -2101,6 +2109,13 @@ i.am-icon-tasks{ display: none;}
 		margin-top: 20px !important;
 	}
 	.news-ul li{ margin-top: 25px;}
+	.customer-case-img{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.am-gallery-bordered .am-gallery-title{
+		text-align: center;
+	}
 
 }
 .pcBanner{
@@ -2127,26 +2142,19 @@ i.am-icon-tasks{ display: none;}
 		height: 100%;
 	}
 	.imit-apply-box .imit-apply{
-		float: none;
-		width: 100%;
-		margin: 0 0 10px 0;
-		height: auto;
+		display: none;
 	}
-	
-	.imit-apply-box .imit-apply .select-box-list .select-box{
-		float: none;
-		margin-right: 0;
-	}
-	.imit-apply-box .imit-apply .title {
-		width: 100%;
+	.imit-apply-box .part-title{
+		display: none;
 	}
 	.imit-apply-box .borrow{
 		float: none;
 		width: 100%;
 		height: auto;
+		border: none;
 	}
 	.imit-apply-box .borrow .title-bg{
-		width: 100%;
+		display: none;
 	}
 	.imit-apply-box .borrow .title{
 		width: 100%;
@@ -2164,7 +2172,18 @@ i.am-icon-tasks{ display: none;}
 		
     }
 	.h5Banner .am-slider .am-slides > li{
-		height: 140px;
+		height: 120px;
+	}
+	.customer-case-img{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.am-gallery-bordered .am-gallery-title{
+		text-align: center;
+	}
+	.gallery-words{
+		height: auto;
+		padding-bottom: 10px;
 	}
 }
 /*适配ipad*/
@@ -2184,40 +2203,45 @@ i.am-icon-tasks{ display: none;}
 		height: 100%;
 	}
 	.imit-apply-box .imit-apply{
-		float: none;
-		width: 100%;
-		margin: 0 0 10px 0;
-		height: auto;
-		
+		display: none;
+	}
+	.imit-apply-box .part-title{
+		display: none;
 	}
 	.imit-apply-box{
 		width: 100%;
 		height: auto;
 		padding: 0 10px;
 	}
-	.imit-apply-box .imit-apply .select-box-list .select-box{
-		margin-right: 30px;
-	}
-	
-	.imit-apply-box .imit-apply .title {
-		width: 100%;
-	}
 	
 	.imit-apply-box .borrow{
 		float: none;
 		width: 100%;
 		height: auto;
+		border: none;
 	}
 	
 	.imit-apply-box .borrow .title-bg{
-		width: 100%;
+		display: none;
 	}
     .h5Banner{
     	display: block;
     }
 	.h5Banner .am-slider .am-slides > li{
-		height: 180px;
+		height: 140px;
 	}
+	.customer-case-img{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.am-gallery-bordered .am-gallery-title{
+		text-align: center;
+	}
+	.gallery-words{
+		height: auto;
+		padding-bottom: 10px;
+	}
+	
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -2236,18 +2260,12 @@ i.am-icon-tasks{ display: none;}
 		height: 100%;
 	}
 	.imit-apply-box .imit-apply{
-		float: none;
-		width: 100%;
-		margin: 0 0 10px 0;
-		height: auto;
+		display: none;
 	}
-	.imit-apply-box .imit-apply .select-box-list .select-box{
-		margin-right: 120px;
+	.imit-apply-box .part-title{
+		display: none;
 	}
-	
-	.imit-apply-box .imit-apply .title {
-		width: 100%;
-	}
+
 	.imit-apply-box{
 		width: 100%;
 		height: auto;
@@ -2257,14 +2275,26 @@ i.am-icon-tasks{ display: none;}
 		float: none;
 		width: 100%;
 		height: auto;
+		border: none;
 	}
 	.imit-apply-box .borrow .title-bg{
-		width: 100%;
+		display: none;
 	}
     .h5Banner{
     	display: block;
     }
 	.h5Banner .am-slider .am-slides > li{
-		height: 200px;
+		height: 180px;
+	}
+	.customer-case-img{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.am-gallery-bordered .am-gallery-title{
+		text-align: center;
+	}
+	.gallery-words{
+		height: auto;
+		padding-bottom: 10px;
 	}
 }

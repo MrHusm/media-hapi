@@ -8602,7 +8602,7 @@ ul.am-dropdown-content > .am-disabled > a:focus {
   display: none;
   -webkit-backface-visibility: hidden;
   position: relative;
-	height: 300px;
+	height: 220px;
 	width: 100%;
 }
 .am-slider .bottomSlide li{
